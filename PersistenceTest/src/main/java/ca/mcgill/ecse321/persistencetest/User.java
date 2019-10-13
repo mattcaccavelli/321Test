@@ -4,7 +4,7 @@ import java.util.Set;
 import javax.persistence.*;
 import java.util.HashSet;
 
-@Entity
+//@Entity
 //@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class User {
 private String name;
@@ -25,7 +25,7 @@ public String getName() {
    return this.name;
 }
 
-@Id
+//@Id
 //@GeneratedValue(strategy=GenerationType.AUTO)
 private String id;
 
