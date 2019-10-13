@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 //extends CrudRepository<User, String>
 @Repository
 public class UserRepository {
+		
 	@Autowired
 	EntityManager entitymanager;
 	

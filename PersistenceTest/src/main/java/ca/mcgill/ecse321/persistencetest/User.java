@@ -4,8 +4,10 @@ import java.util.Set;
 import javax.persistence.*;
 import java.util.HashSet;
 
-//@Entity
+
 //@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Entity
+@Table(name="users")
 public class User {
 private String name;
 
@@ -25,8 +27,7 @@ public String getName() {
    return this.name;
 }
 
-//@Id
-//@GeneratedValue(strategy=GenerationType.AUTO)
+@Id
 private String id;
 
 public void setId(String value) {
@@ -54,13 +55,13 @@ public String getPassword() {
  *           user        &gt;       userRole
  * </pre>
  */
-private Set<UserRole> userRole;
+//private Set<UserRole> userRole;
 
-public Set<UserRole> getUserRole() {
-   if (this.userRole == null) {
-this.userRole = new HashSet<UserRole>();
-   }
-   return this.userRole;
-}
+//public Set<UserRole> getUserRole() {
+ //  if (this.userRole == null) {
+//this.userRole = new HashSet<UserRole>();
+  // }
+ //  return this.userRole;
+//}
 
 }
